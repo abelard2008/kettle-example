@@ -12,6 +12,8 @@ import org.pentaho.di.trans.step.StepMetaInterface;
 
 public class HelloworldStep extends BaseStep implements StepInterface {
 
+	private static Class<?> PKG = HelloworldStep.class; // for i18n purposes, needed by Translator2!!
+
 	public HelloworldStep(StepMeta stepMeta, StepDataInterface stepDataInterface,
 			int copyNr, TransMeta transMeta, Trans trans) {
 		super(stepMeta, stepDataInterface, copyNr, transMeta, trans);

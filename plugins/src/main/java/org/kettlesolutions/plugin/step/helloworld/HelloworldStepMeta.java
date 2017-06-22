@@ -33,13 +33,13 @@ import org.w3c.dom.Node;
 		id="Helloworld",
 		name="name",
 		description="description",
-		categoryDescription="categoryDescription", 
+		categoryDescription="categoryDescription",
 		image="org/kettlesolutions/plugin/step/helloworld/HelloWorld.png",
 		i18nPackageName="org.kettlesolutions.plugin.step.helloworld"
 ) 
 public class HelloworldStepMeta extends BaseStepMeta implements StepMetaInterface {
 
-	private static Class<?> PKG = HelloworldStep.class; //for i18n
+	private static Class<?> PKG = HelloworldStepMeta.class; //for i18n
 	public enum Tag {
 		field_name,
 	};
@@ -82,6 +82,9 @@ public class HelloworldStepMeta extends BaseStepMeta implements StepMetaInterfac
 			);
 			remarks.add(ok);
 		}
+	}
+	public HelloworldStepMeta() {
+		super();
 	}
 
 	/**
