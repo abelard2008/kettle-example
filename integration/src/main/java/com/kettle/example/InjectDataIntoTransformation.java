@@ -60,6 +60,9 @@ public class InjectDataIntoTransformation {
             }
         };
         StepInterface stepInterface = trans.findRunThread("Dummy");
+        if(stepInterface == null) {
+            System.out.println("stepInterface " + stepInterface);
+        }
         stepInterface.addRowListener(rowListener);
 
         RowProducer rowProducer = trans.addRowProducer("Inject", 0);
